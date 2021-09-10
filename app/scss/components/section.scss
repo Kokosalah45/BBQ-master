@@ -1,0 +1,103 @@
+.section{
+    display :flex;
+    min-height: 100vh;
+    width : 50%;
+    flex-direction: column;
+    align-items: center;
+    
+    &__small{
+        
+        &--left{
+            padding : .5em 0;
+            &::before{
+                content: '';
+                position: absolute;
+                top : 0;
+                width: 100%;
+                padding: .2em;
+                background : var(--clr-orangeYellowGradient);
+            }
+        }
+        }
+    &--left{
+        background-color: black;
+        margin-bottom: 1em;
+        position: relative;
+        color: #fff;
+        &::before{
+            content: '';
+            position: absolute;
+            inset: 0 0 0 0 ;
+            background-image: url('https://images.unsplash.com/photo-1508615263227-c5d58c1e5821?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            opacity : 0.5;
+        }
+ }
+ &__headers{
+     
+     margin-bottom: 3em;
+    
+ }
+ &__description{
+     max-width: 60ch;
+     line-height: 1.2;
+     margin-bottom: 1em;
+ }
+ &__credentials{
+    width: 70%;
+     display : flex;
+     flex-direction : column ; 
+     *{
+         margin-bottom: 1em;
+     }
+     &__input{
+         padding: .5em 0 ;
+         text-align: center;
+         border: 2px solid rgb(161, 160, 160);
+         border-radius: 5px;
+         
+        
+        
+     }
+     &__submit{
+        padding: .7em 0 ;
+        background : var(--clr-orangeYellowGradient);
+        color: white;
+        border-radius: 5px;
+     }
+     
+ }
+
+ &__statements{
+     margin-top: .5em;
+     *{
+         margin-bottom: 1em;
+     }
+ }
+   
+
+    
+}
+
+
+
+.container{
+    display :flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: center;
+    &--headers{
+        display : flex;
+        flex-direction : column;
+        padding : .5em;
+    }
+    &--right{
+        width : 80%;
+        max-width: 550px;
+    }
+  
+   
+}

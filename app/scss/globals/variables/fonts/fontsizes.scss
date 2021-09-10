@@ -1,0 +1,17 @@
+@use 'app/scss/utilities' as * ;
+:root{
+    --fs-heading1 :  3.5rem;
+    --fs-heading2 :  1.75rem;
+    --fs-complementary :  1.4rem;
+    --fs-body : 1.125rem;
+    --fs-small : 0.625rem;
+    @include breakPointsDownUntil('medium'){
+   
+    --fs-heading1 : 2.25rem ;
+    --fs-heading2 : 1.3125rem;
+    --fs-complementary :  1.2rem;
+    --fs-body : 1rem ;
+    
+    }
+    
+}

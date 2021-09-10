@@ -1,0 +1,23 @@
+@use '../utilities/' as *;
+.main{
+    display : flex;
+    height: 95vh
+    
+  }
+  @include breakPointsDownUntil('medium'){
+    .main{
+      flex-direction: column;
+      }
+      .section{
+        min-height : 50vh;
+        width: 100%;
+        
+      }
+      .container--left{
+        justify-content: space-around;
+      }
+  }
+  
+  
+  
+  
