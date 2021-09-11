@@ -10,7 +10,9 @@
       flex-direction: column;
       }
       .section--left{
-        margin-bottom: 1em;
+        margin-bottom: .5em;
+        flex-basis : 40%;
+
       }
       .container--left{
         justify-content: space-around;
