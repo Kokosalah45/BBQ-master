@@ -1,9 +1,10 @@
 .section{
     display :flex;
-    min-height: 100vh;
-    width : 50%;
+  
+    flex : 1 0 50%;
     flex-direction: column;
     align-items: center;
+    padding: 0 1em;
     
     &__small{
         
@@ -16,12 +17,14 @@
                 width: 100%;
                 padding: .2em;
                 background : var(--clr-orangeYellowGradient);
+       
             }
         }
         }
     &--left{
         background-color: black;
-        margin-bottom: 1em;
+        min-height:0;
+         min-width:0;
         position: relative;
         color: #fff;
         &::before{
@@ -33,8 +36,10 @@
             background-position: center;
             background-repeat: no-repeat;
             opacity : 0.5;
+            
         }
  }
+ 
  &__headers{
      
      margin-bottom: 3em;
@@ -95,7 +100,7 @@
         padding : .5em;
     }
     &--right{
-        width : 80%;
+       
         max-width: 550px;
     }
   

@@ -1,17 +1,16 @@
 @use '../utilities/' as *;
 .main{
     display : flex;
-    height: 95vh
+    height: 100vh;
+    
     
   }
   @include breakPointsDownUntil('medium'){
     .main{
       flex-direction: column;
       }
-      .section{
-        min-height : 50vh;
-        width: 100%;
-        
+      .section--left{
+        margin-bottom: 1em;
       }
       .container--left{
         justify-content: space-around;
